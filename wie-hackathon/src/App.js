@@ -1,4 +1,5 @@
 // App.js
+
 import React, { useState } from 'react';
 import './App.css';
 import Login from './Login';
@@ -9,6 +10,7 @@ import Connections from './Connections';
 import Games from './Games';
 
 function App() {
+  
   const [currentPage, setCurrentPage] = useState('login');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userEmail, setUserEmail] = useState('');
@@ -45,4 +47,6 @@ function App() {
   );
 }
 
+
 export default App;
+

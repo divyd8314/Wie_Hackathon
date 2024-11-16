@@ -1,4 +1,3 @@
-// Home.js
 import React from 'react';
 import './Home.css';
 
@@ -17,13 +16,13 @@ const Home = ({ setCurrentPage }) => {
             
             <main className="main-content">
                 <div className="welcome-section">
-                    <h1>Welcome to Your Learning Journey</h1>
-                    <p>Explore, Connect, and Grow Together</p>
+                    <h1 className="welcome-title">Welcome to HeritEdge</h1>
+                    <p className="welcome-description">Explore, Connect, and Grow Together</p>
+                    <button className="action-button">Start Exploring</button>
                 </div>
                 <div className="image-container">
                     <img 
-                        src="/api/placeholder/800/400" 
-                        alt="Diverse children learning together" 
+                        src="/logo.png" 
                         className="main-image"
                     />
                 </div>

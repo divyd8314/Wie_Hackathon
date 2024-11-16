@@ -1,0 +1,77 @@
+.story-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, #f0c27b, #4b1248);
+    /* Vibrant gradient */
+    color: #fff;
+}
+
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.story-card h2 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+.story-card h4 {
+    color: #ffeb3b;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+
+.story-card p {
+    font-size: 1rem;
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+
+/* Add border styles and cultural icons */
+.story-card::before {
+    content: "🌍";
+    /* Cultural icon */
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0.7;
+}
+
+
+/* Add some padding and background color to the grid */
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+
+@media (max-width: 768px) {
+    .story-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+}

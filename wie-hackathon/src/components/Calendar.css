@@ -1,0 +1,43 @@
+
+.calendar {
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+  }
+   .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+   .nav-button {
+    background: #000000;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+   .nav-button:hover {
+    background: #423f3f;
+  }
+   .calendar-days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+   .day-button {
+    width: 40px;
+    height: 40px;
+    background: #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+   .day-button:hover {
+    background: #d7e3fc;
+  }
+ 
